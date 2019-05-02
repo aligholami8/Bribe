@@ -1,0 +1,16 @@
+﻿<Window x:Class="login_page.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:login_page"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="510" Width="1000" MinWidth="1000" MinHeight="510" MaxWidth="1000" MaxHeight="510">
+    <Grid>
+        <Image Source="image/asli.jpg" Margin="0,0,0,-558" RenderTransformOrigin="0.499,0.567" Height="1038" VerticalAlignment="Top"    />
+        <TextBox materialDesign:HintAssist.Hint="USERNAME" FontSize="65"  Margin="224,199,218,186" FontFamily="B Nazanin" TextDecorations="{x:Null}" Opacity="0.5" RenderTransformOrigin="0.493,0.53" />
+        <PasswordBox materialDesign:HintAssist.Hint="PASSWORD" FontSize="65" Foreground="White" Margin="224,306,218,70" FontFamily="B Nazanin"/>
+
+    </Grid>
+</Window>
