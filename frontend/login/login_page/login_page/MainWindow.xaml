@@ -8,9 +8,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="510" Width="1000" MinWidth="1000" MinHeight="510" MaxWidth="1000" MaxHeight="510">
     <Grid>
-        <Image Source="image/asli.jpg" Margin="0,0,0,-558" RenderTransformOrigin="0.499,0.567" Height="1038" VerticalAlignment="Top"    />
+        <Image Source="image/asli.jpg" Margin="-10,-92,10,-92" RenderTransformOrigin="0.499,0.567"    />
         <TextBox materialDesign:HintAssist.Hint="USERNAME" FontSize="65"  Margin="224,199,218,186" FontFamily="B Nazanin" TextDecorations="{x:Null}" Opacity="0.5" RenderTransformOrigin="0.493,0.53" />
         <PasswordBox materialDesign:HintAssist.Hint="PASSWORD" FontSize="65" Foreground="White" Margin="224,306,218,70" FontFamily="B Nazanin"/>
-        <Button Content="Log in" Width="100" Height="50" Margin="847,275,45,155" RenderTransformOrigin="1,1"/>
+        <Button Content="Log in" Height="Auto" Margin="827,275,61,139" RenderTransformOrigin="0.53,0.56" Background="#FF112631">
+            <Button.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF0F242F" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.BorderBrush>
+        </Button>
     </Grid>
 </Window>
