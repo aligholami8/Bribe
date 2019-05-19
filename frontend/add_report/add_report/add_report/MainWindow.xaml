@@ -1,0 +1,143 @@
+﻿<Window x:Class="add_report.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+
+        xmlns:local="clr-namespace:add_report"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1200" Width="1024" ResizeMode="NoResize" ScrollViewer.HorizontalScrollBarVisibility="Auto" MaxWidth="1024" MaxHeight="1200">
+    <Grid Margin="0,10,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+
+        <Image Source="IMAGE_ADDREPORT/ADD_REPORT.JPG" Height="1180" VerticalAlignment="Top" HorizontalAlignment="Right" Width="1018" Margin="0,-18,0,0"/>
+
+        <ComboBox Text="which area of goverment was it?" Background="White" Margin="75,362,328,759" SelectionChanged="ComboBox_SelectionChanged"  >
+
+            <ComboBoxItem>Airport</ComboBoxItem>
+            <ComboBoxItem>Banking</ComboBoxItem>
+            <ComboBoxItem>Bureau of Immigration</ComboBoxItem>
+            <ComboBoxItem>Commercial Tax,Sales Tax,VAT</ComboBoxItem>
+            <ComboBoxItem>Customs,Excise and Service Tax</ComboBoxItem>
+            <ComboBoxItem>Education</ComboBoxItem>
+            <ComboBoxItem>Electricity and Power Supply</ComboBoxItem>
+            <ComboBoxItem>Food and Drug Administration</ComboBoxItem>
+            <ComboBoxItem>Food,Civil Supplies and Consumer Affairs</ComboBoxItem>
+            <ComboBoxItem>Foreign Trade</ComboBoxItem>
+            <ComboBoxItem>content Forest</ComboBoxItem>
+            <ComboBoxItem>Health and Family Welffare</ComboBoxItem>
+            <ComboBoxItem>Income Tax</ComboBoxItem>
+            <ComboBoxItem>Insurance</ComboBoxItem>
+            <ComboBoxItem>Judiciary</ComboBoxItem>
+            <ComboBoxItem>Labour</ComboBoxItem>
+            <ComboBoxItem>Municipal Services</ComboBoxItem>
+            <ComboBoxItem>Others</ComboBoxItem>
+            <ComboBoxItem>Passport</ComboBoxItem>
+            <ComboBoxItem>Pension</ComboBoxItem>
+            <ComboBoxItem>Police</ComboBoxItem>
+            <ComboBoxItem>Post Office</ComboBoxItem>
+            <ComboBoxItem>Public Sector Undertakings</ComboBoxItem>
+            <ComboBoxItem>Public Services</ComboBoxItem>
+            <ComboBoxItem>Public Work Department</ComboBoxItem>
+            <ComboBoxItem>Railway</ComboBoxItem>
+            <ComboBoxItem>Religious Trusts</ComboBoxItem>
+            <ComboBoxItem>Revenue</ComboBoxItem>
+            <ComboBoxItem>Slum Development</ComboBoxItem>
+            <ComboBoxItem>Social Welfare</ComboBoxItem>
+            <ComboBoxItem>Stamp and Registration</ComboBoxItem>
+            <ComboBoxItem>Telecom Services</ComboBoxItem>
+            <ComboBoxItem>Transport</ComboBoxItem>
+            <ComboBoxItem>Urban Development Authorties</ComboBoxItem>
+            <ComboBoxItem>Water and Sewage</ComboBoxItem>
+        </ComboBox>
+        <ComboBox Text="which area of goverment was it?" Background="White" Margin="75,430,328,691" SelectionChanged="ComboBox_SelectionChanged"  >
+
+            <ComboBoxItem Content="Airport"/>
+            <ComboBoxItem Content="Banking"/>
+            <ComboBoxItem Content="Bureau of Immigration"/>
+            <ComboBoxItem Content="Commercial Tax,Sales Tax,VAT"/>
+            <ComboBoxItem Content="Customs,Excise and Service Tax"/>
+            <ComboBoxItem Content="Education"/>
+            <ComboBoxItem Content="Electricity and Power Supply"/>
+            <ComboBoxItem Content="Food and Drug Administration"/>
+            <ComboBoxItem Content="Food,Civil Supplies and Consumer Affairs"/>
+            <ComboBoxItem Content="Foreign Trade"/>
+            <ComboBoxItem Content="content Forest"/>
+            <ComboBoxItem Content="Health and Family Welffare"/>
+            <ComboBoxItem Content="Income Tax"/>
+            <ComboBoxItem Content="Insurance"/>
+            <ComboBoxItem Content="Judiciary"/>
+            <ComboBoxItem Content="Labour"/>
+            <ComboBoxItem Content="Municipal Services"/>
+            <ComboBoxItem Content="Others"/>
+            <ComboBoxItem Content="Passport"/>
+            <ComboBoxItem Content="Pension"/>
+            <ComboBoxItem Content="Police"/>
+            <ComboBoxItem Content="Post Office"/>
+            <ComboBoxItem Content="Public Sector Undertakings"/>
+            <ComboBoxItem Content="Public Services"/>
+            <ComboBoxItem Content="Public Work Department"/>
+            <ComboBoxItem Content="Railway"/>
+            <ComboBoxItem Content="Religious Trusts"/>
+            <ComboBoxItem Content="Revenue"/>
+            <ComboBoxItem Content="Slum Development"/>
+            <ComboBoxItem Content="Social Welfare"/>
+            <ComboBoxItem Content="Stamp and Registration"/>
+            <ComboBoxItem Content="Telecom Services"/>
+            <ComboBoxItem Content="Transport"/>
+            <ComboBoxItem Content="Urban Development Authorties"/>
+            <ComboBoxItem Content="Water and Sewage"/>
+        </ComboBox>
+        <ComboBox Text="which area of goverment was it?" Background="White" Margin="75,494,654,627" SelectionChanged="ComboBox_SelectionChanged"  >
+
+            <ComboBoxItem Content="Alborz"/>
+            <ComboBoxItem Content="Ardabil"/>
+            <ComboBoxItem Content="Bushehr"/>
+            <ComboBoxItem Content="Chaharmahal and Bakhtiari"/>
+            <ComboBoxItem Content="East Azerbaijan"/>
+            <ComboBoxItem Content="Isfahan"/>
+            <ComboBoxItem Content="Fars"/>
+            <ComboBoxItem Content="Gilan"/>
+            <ComboBoxItem Content="Golestan"/>
+            <ComboBoxItem Content="Hamadan"/>
+            <ComboBoxItem Content="Hormozgan"/>
+            <ComboBoxItem Content="Ilam"/>
+            <ComboBoxItem Content="Kerman"/>
+            <ComboBoxItem Content="Kermanshah"/>
+            <ComboBoxItem Content="Khuzestan"/>
+            <ComboBoxItem Content="Kohgiluyeh and Boyer-Ahmad"/>
+            <ComboBoxItem Content="Kurdistan"/>
+            <ComboBoxItem Content="Lorestan"/>
+            <ComboBoxItem Content="Markazi"/>
+            <ComboBoxItem Content="Mazandaran"/>
+            <ComboBoxItem Content="North Khorasan"/>
+            <ComboBoxItem Content="Qazvin"/>
+            <ComboBoxItem Content="Qom"/>
+            <ComboBoxItem Content="Razavi Khorasan"/>
+            <ComboBoxItem Content="Semnan"/>
+            <ComboBoxItem Content="Sistan and Baluchestan"/>
+            <ComboBoxItem Content="South Khorasan"/>
+            <ComboBoxItem Content="Tehran"/>
+            <ComboBoxItem Content="West Azerbaijan"/>
+            <ComboBoxItem Content="Yazd"/>
+            <ComboBoxItem Content="Zanjan"/>
+
+        </ComboBox>
+        <DatePicker  Background="White" FontSize="25" HorizontalAlignment="Left" Margin="379,500,0,0" VerticalAlignment="Top" Height="29" Width="176"/>
+        <TextBox  Background="White" FontSize="15" materialDesign:HintAssist.Hint="How Much? (Rial)" Style="{StaticResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Left" Height="43" Margin="570,485,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="825,63,0,0" VerticalAlignment="Top" Width="173" Height="34" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="552,63,0,0" VerticalAlignment="Top" Width="134" Height="34" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="290,63,0,0" VerticalAlignment="Top" Width="234" Height="34" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="134,63,0,0" VerticalAlignment="Top" Width="134" Height="34" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}"/>
+        <TextBox Background="White" materialDesign:HintAssist.Hint="Enter report details along with Date,Time and Location incident;name and Designation of the officer" FontSize="13.5" Margin="75,586,0,367" TextWrapping="Wrap" HorizontalAlignment="Left" Width="611" />
+        <TextBox Background="White" materialDesign:HintAssist.Hint="Enter title of your report" HorizontalAlignment="Left" Height="33" Margin="75,542,0,0" TextWrapping="Wrap" FontSize="15" VerticalAlignment="Top" Width="611"/>
+
+
+
+    </Grid>
+</Window>
